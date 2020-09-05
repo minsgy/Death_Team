@@ -34,6 +34,7 @@ body{
     width: 640px;
   left: 50%;
   margin-left: -320px;
+  
     
   }
   
@@ -47,10 +48,10 @@ body{
     margin-top: 100px;
   box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
   opacity: 0.8;
+  
   }
   
   .cont_forms {
-    opacity: 0.2;
     position: absolute;
     overflow: hidden;
     top:100px;
@@ -63,6 +64,8 @@ body{
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  
+  
   }
   
   .cont_forms_active_login {
@@ -76,6 +79,7 @@ body{
   -o-transition: all 0.5s;
   transition: all 0.5s;
   
+  
   }
   
   .cont_forms_active_sign_up {
@@ -88,6 +92,7 @@ body{
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  
   }
   
   .cont_img_back_grey {
@@ -95,6 +100,7 @@ body{
     width: 950px;
   top:-80px;
     left: -116px;
+    
   }
   
   .cont_img_back_grey > img {
@@ -114,6 +120,7 @@ body{
     width: 950px;
   top:-80px;
     left: -116px;
+    
   }
   
   .cont_img_back_ > img {
@@ -124,6 +131,7 @@ body{
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  
   }
   
   .cont_forms_active_login > .cont_img_back_ {
@@ -154,6 +162,7 @@ body{
   z-index: 1;
   opacity: 0.8;
   
+  
   } 
   
   .col_md_login {
@@ -167,6 +176,7 @@ body{
     font-weight: 400;
   margin-top: 70px;
       color: #757575;
+      
       
   }
   
