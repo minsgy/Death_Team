@@ -38,7 +38,7 @@ DOWNLOAD_APPS = [
     "orders.apps.OrdersConfig",  # 주문 모델
     "main.apps.MainConfig",  # 메인 화면
     "essays.apps.EssaysConfig",  # 에시이 편집화면
-    #'core.apps.CoreConfig', # Core 설정
+    "core.apps.CoreConfig",  # Core 설정
 ]
 
 INSTALLED_APPS = [
@@ -65,7 +65,7 @@ ROOT_URLCONF = "config.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
