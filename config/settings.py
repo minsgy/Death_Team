@@ -31,6 +31,16 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+DOWNLOAD_APPS = [
+    'accounts.apps.AccountsConfig', # 유저 계정 생성
+    'groups.apps.GroupsConfig', # 그룹 모델 생성
+    'lists.apps.ListsConfig', # 일기 모델 생성
+    'orders.apps.OrdersConfig', # 주문 모델
+    'main.apps.MainConfig', # 메인 화면
+    'essays.apps.EssaysConfig', #에시이 편집화면
+    #'core.apps.CoreConfig', # Core 설정
+]
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -38,13 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts.apps.AccountsConfig', # 유저 계정 생성
-    'groups.apps.GroupsConfig', # 그룹 모델 생성
-    'lists.apps.ListsConfig', # 일기 모델 생성
-    'orders.apps.OrdersConfig', # 주문 모델
-    'main.apps.MainConfig', # 메인 화면
-    'essays.apps.EssaysConfig' #에시이 편집화면
-]
+] + DOWNLOAD_APPS # 간략화
  
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
