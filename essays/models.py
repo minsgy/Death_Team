@@ -1,3 +1,10 @@
 from django.db import models
+from core import models as core_models
 
-# Create your models here.
+
+class Essays(core_models.TimeStempedModel):
+
+    name = models.CharField(max_length=50)
+    start_page = models.ForeignKey("lists.List")
+
+    last_page = models.ForeignKey("list.List")
