@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'lists.apps.ListsConfig', # 일기 모델 생성
     'orders.apps.OrdersConfig', # 주문 모델
     'main.apps.MainConfig', # 메인 화면
+    'essays.apps.EssaysConfig' #에시이 편집화면
 ]
  
 MIDDLEWARE = [
