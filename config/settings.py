@@ -39,6 +39,7 @@ DOWNLOAD_APPS = [
     "main.apps.MainConfig",  # 메인 화면
     "essays.apps.EssaysConfig",  # 에시이 편집화면
     "core.apps.CoreConfig",  # Core 설정
+    "comment.apps.CommentConfig", #댓글
 ]
 
 INSTALLED_APPS = [
