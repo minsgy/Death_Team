@@ -50,6 +50,7 @@ body{
   }
   
   .cont_forms {
+    opacity: 0.2;
     position: absolute;
     overflow: hidden;
     top:100px;
