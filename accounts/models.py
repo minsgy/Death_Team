@@ -23,4 +23,4 @@ class User(AbstractUser):
         default=GENDER_MALE,  # choices 의 default 값
     )
 
-    age = models.IntegerField()
+    age = models.IntegerField(null=True)
