@@ -1,7 +1,7 @@
 from django.db import models
 from core import models as core_models
 
-
+# 수정 필요할거 같음
 class Essays(core_models.TimeStempedModel):
 
     name = models.CharField(max_length=50)
