@@ -302,3 +302,7 @@ dmypy.json
 .pytype/
 
 # End of https://www.toptal.com/developers/gitignore/api/python
+
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py

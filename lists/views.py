@@ -1,3 +1,9 @@
 from django.shortcuts import render
+from . import models
 
-# Create your views here.
+
+class list(models.Model):
+
+    """ list views """
+
+    return render(request, "page.html")
