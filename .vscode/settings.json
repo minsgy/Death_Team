@@ -4,5 +4,5 @@
     "python.linting.enabled": true,
     "python.formatting.provider": "black",
     "python.linting.flake8Args": ["--max-line-length=88"],
-    "python.pythonPath": "C:\\Users\\samsung\\.virtualenvs\\Airbnb_CloneCoding-w0JNrXIC\\Scripts\\python.exe"
+    "python.pythonPath": "myvenv\\Scripts\\python.exe"
 }
