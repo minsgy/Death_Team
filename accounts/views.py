@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from . import User
+from .models import User
 from django.contrib import auth
 # Create your views here.
 
