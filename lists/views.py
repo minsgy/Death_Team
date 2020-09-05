@@ -2,8 +2,7 @@ from django.shortcuts import render
 from . import models
 
 
-class list(models.Model):
+def detail(request):
 
     """ list views """
-
     return render(request, "page.html")
