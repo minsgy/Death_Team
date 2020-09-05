@@ -4,8 +4,18 @@ from django.contrib import auth
 # Create your views here.
 
 def login(request):
-    pass
+    if request.method == "POST":
+        username = request.POST['username']
+        password = request.POST['password']
+        user = auth.authenticate(request, username=username, password=password)
 
+        if user is not None:
+            auth.login(request, user)
+            return redirect('index')
+        else:
+            return render(request, 'login.html', {'error': "아이디 또는 비밀 번호가 다릅니다."})
+    else:
+        return render(request, 'login.html')    
 def logout(request):
     pass
 
