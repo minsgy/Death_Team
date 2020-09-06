@@ -18,7 +18,7 @@ def login(request):
         return render(request, 'login.html')    
 def logout(request):
     auth.logout(request)
-    return redirect('')
+    return redirect('index')
 
 def signup(request):
     if request.method == "POST":
