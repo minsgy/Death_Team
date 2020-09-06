@@ -34,7 +34,7 @@ body * {
 }
 
 body {
-  background: 
+  /* background: 
     radial-gradient(
       hsla(199,40%,90%,.7), 
       hsla(0,0%,100%,0)
@@ -45,7 +45,7 @@ body {
       #58AA55 , 
       #AEE9B2, 
       #F5F2A8
-      );
+      ); */
   color: #222;
   /*font-family: 'Gabriela', serif;*/
   perspective: 70em;/*in your face*/
