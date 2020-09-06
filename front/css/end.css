@@ -6,6 +6,7 @@
 
 html,
 body {
+	font-family: 'KCC-eunyoung';
 	width: 100%;
 	height: 100%;
 }
@@ -15,7 +16,7 @@ body {
 	align-items: center;
 	justify-content: center;
 
-	background: #F5F2A8;
+	/* background: #F5F2A8; */
 }
 
 .image {
