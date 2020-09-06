@@ -13,6 +13,7 @@
 html,
 body {
     font-family: 'Cafe24Oneprettynight';
+    background-color: white;
     margin: 0;
     padding: 0;
 }
@@ -118,6 +119,7 @@ footer {
     font-family: 'Nanum Myeongjo', serif;
     float: left;
     width: 100%;
+    height: 100px;
 }
 
 p {

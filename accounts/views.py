@@ -41,3 +41,6 @@ def signup(request):
     print("생성 안됌")
     return render(request, "")  # POST 형식 아닐 시
 
+
+def about(request): # 소개페이지
+    return render(request,'about.html')
