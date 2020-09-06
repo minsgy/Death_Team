@@ -3,19 +3,11 @@ from django.utils import timezone
 from .models import List
 
 
-def detail(request):
-
-    """ list views 일기장 """
-
-    page = List.objects.all()  # 모든 리스트 객체 가져오기
-    page.now = timezone.now()
-
-    return render(request, "list/list.html", {"page": page})
-
-
 # 일기 작성
 def create(request):
-    item = List()
+
+    """ create views 일기 작성 """
+
     if request.method == "POST":
         item = List()
 
@@ -28,5 +20,12 @@ def create(request):
 
         return redirect("detail")
 
-    return render(request, "list/create.html", {"item": item})
+    return render(request, "list/create.html")
 
+
+def detail(request):
+
+    page = List.objects.all()  # 모든 리스트 객체 가져오기
+    page.now = timezone.now()
+
+    return render(request, "list/list.html", {"page": page})
