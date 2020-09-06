@@ -1,4 +1,9 @@
-{% extends "../base.html" %} {% load static %} {% block css %}{% static 'css/join.css' %}{% endblock %} {% block title %} 접속하기창{% endblock %} {% block content %}
+{% extends "../base.html" %} 
+{% load static %} 
+{% block css %}{% static 'css/join.css' %}{% endblock %} 
+{% block title %} 접속하기창{% endblock %} 
+
+{% block content %}
 <div class="cotn_principal">
     <div class="cont_centrar">
 
@@ -27,30 +32,36 @@
                 </div>
 
             </div>
+
             <div class="cont_forms">
 
-                <div class="cont_form_login">
-                    <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
-                    <h2>로그인</h2>
-                    <input type="text" placeholder="아이디를 입력하세요." />
-                    <input type="password" placeholder="비밀번호를 입력하세요" />
-                    <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
-                </div>
+                <form method="POST" action="">
+                    {% csrf_token %}
+                    <div class="cont_form_login">
+                        <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+                        <h2>로그인</h2>
+                        <input name="username" type="text" placeholder="아이디를 입력하세요." />
+                        <input name="password" type="password" placeholder="비밀번호를 입력하세요" />
+                        <button type="submit" class="btn_login" href="{% url 'login' %}" onclick="cambiar_login()">LOGIN</button>
+                    </div>
+                </form>
 
-                <div class="cont_form_sign_up">
-                    <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
-                    <h2>회원가입</h2>
-                    <input type="text" placeholder="아이디를 입력하세요.">
-                    <input type="text" placeholder="비밀번호를 입력하세요." />
-                    <input type="text" placeholder="비밀번호를 다시 한 번 입력하세요." />
-
-                    <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
-                </div>
+                <form method="POST" action="{% url 'signup'%}">
+                    {% csrf_token %}
+                    <div class="cont_form_sign_up">
+                        <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+                        <h2>회원가입</h2>
+                        <input name="username" type="text" placeholder="아이디를 입력하세요.">
+                        <input name="password1" type="text" placeholder="비밀번호를 입력하세요." />
+                        <input name="password2" type="text" placeholder="비밀번호를 다시 한 번 입력하세요." />
+                        <button type="submit" class="btn_sign_up" href="{% url 'signup' %}" onclick="cambiar_sign_up()">SIGNUP</button>
+                    </div>
+                </form>
             </div>
-
         </div>
     </div>
 </div>
-{% endblock %} {% block js %}
+{% endblock %} 
+{% block js %}
 <script src="{% static 'js/join.js' %}"></script>
 {% endblock %}

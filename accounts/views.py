@@ -6,34 +6,38 @@ from django.contrib import auth
 
 def login(request):
     if request.method == "POST":
-        username = request.POST["username"]
-        password = request.POST["password"]
+        username = request.POST.get("username")
+        password = request.POST.get("password")
         user = auth.authenticate(request, username=username, password=password)
 
         if user is not None:
             auth.login(request, user)
-            return redirect("index")
+            return redirect("main") # 그룹 선택 화면 이동
         else:
-            return render(request, "join.html", {"error": "아이디 또는 비밀 번호가 다릅니다."})
+            print("로그인안댐")
+            return render(request, "account/join.html", {"error": "아이디 또는 비밀 번호가 다릅니다."})
     else:
+        print("로그인안댐")
         return render(request, "account/join.html")
 
 
 def logout(request):
     auth.logout(request)
-    return redirect("index")
+    return redirect("main")
 
 
 def signup(request):
     if request.method == "POST":
-        if request.POST["password1"] == request.POST["password2"]:
+        if request.POST.get("password1") == request.POST.get("password2"):
             user = User.objects.create_user(
-                username=request.POST["username"], password=request.POST["password1"]
+                username=request.POST.get("username"), password=request.POST.get("password1")
             )
             # 유저 값을 가져와 아이디/패스워드에 추가한 값을 user에 추가
             auth.login(request, user)
-            return redirect("index")  # 그룹 선택 화면
-        return render(request, "account/join.html")  # 비밀번호 확인 실패 시 다시 돌아감.
-
-    return render(request, "join.html")  # POST 형식 아닐 시
+            return redirect("")  # 다시 로그인 화면
+        print("생성 안됌") 
+        return render(request, "")  # 비밀번호 확인 실패 시 다시 돌아감.
+    
+    print("생성 안됌")
+    return render(request, "")  # POST 형식 아닐 시
 
