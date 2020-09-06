@@ -5,17 +5,17 @@ const fields = Array.from(document.querySelectorAll('.field'));
 const inputs = Array.from(document.querySelectorAll(".field > input"));
 
 
-const targetForm = document.querySelector('#book')
-const counted_text = document.querySelector('.price')
-targetForm.addEventListener("keyup", function () {
+const targetForm = document.querySelector('#book') 
+const counted_text = document.querySelector('.price') 
+targetForm.addEventListener("keyup", function() { 
   const price = targetForm.value;
-  counted_text.innerHTML = price * 5000 + "원";
+  counted_text.innerHTML = price*5000+"원";
 })
 
 
 
 function blurAll() {
-  fields.forEach(function (f) {
+  fields.forEach(function(f) {
     f.classList.remove('active', 'semi-active');
   })
 }
@@ -37,3 +37,6 @@ inputs.forEach(function (f) {
 firstField.classList.add("active");
 secondField.classList.add("semi-active");
 firstInput.focus();
+
+
+

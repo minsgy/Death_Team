@@ -25,5 +25,5 @@ urlpatterns = [
     path("groups/",include("groups.urls")), # 그룹 모임 메인 화면
     path("list/", include("lists.urls")),
     # path("/",include("main.urls")),
-    # path("/",include("orders.urls")),
+    path("order/",include("orders.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

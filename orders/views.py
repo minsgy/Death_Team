@@ -1,6 +1,10 @@
 from django.shortcuts import render
 
 # Create your views here.
-def test(request):
-    return render(request, "static/css/a.html")
+def order(request):
+    return render(request, "order/order.html")
+
+
+def payment(request):
+    return render(request, "order/payment.html")
 
