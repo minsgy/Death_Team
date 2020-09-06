@@ -9,4 +9,5 @@ class List(core_models.TimeStempedModel):  # 일기
     #    weather = models.ImageField() # 일기 날씨
     content = models.TextField(default="", blank=True)  # 일기 내용
     photos = models.ImageField(upload_to="list_photos")  # 사진
+    user = models.ForeignKey("accounts.USer", on_delete=models.CASCADE)
 

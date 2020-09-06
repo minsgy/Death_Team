@@ -15,6 +15,7 @@ class User(AbstractUser):
         (GENDER_FEMALE, "Female"),
     )
 
+    name = models.CharField(max_length=50, default="멋쟁이")
     avatar = models.ImageField(blank=True)  # 프로필사진
     gender = models.CharField(  # 성별
         choices=GENDER_CHOICES,

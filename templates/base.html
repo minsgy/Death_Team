@@ -7,7 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    {% comment %} <link rel="stylesheet" href="{% block css %} {% endblock %}"> {% endcomment %}
+    {% block css %}
+    {% endblock %}
+    {% comment %} k rel="stylesheet" href="{% block css %} {% endblock %}"> {% endcomment %}
     <title>
     {% block title %}
 
@@ -28,7 +30,7 @@
 
     <br>
     <nav class="nav">
-        <a href="#" class="nav-item">Home</a>
+        <a href="{% url 'detail' %}" class="nav-item">Home</a>
         <a href="#" class="nav-item">About</a>
         <a href="#" class="nav-item">logout</a>
         <span class="nav-indicator"></span>
