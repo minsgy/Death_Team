@@ -38,7 +38,7 @@ DOWNLOAD_APPS = [
     "orders.apps.OrdersConfig",  # 주문 모델
     "essays.apps.EssaysConfig",  # 에시이 편집화면
     "core.apps.CoreConfig",  # Core 설정
-    "comment.apps.CommentConfig", #댓글
+    "comment.apps.CommentConfig",  # 댓글
 ]
 
 INSTALLED_APPS = [
@@ -125,7 +125,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = "/static/"
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATICFILES_DIR = [os.path.join(BASE_DIR, "static")]
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = "/media/"
 

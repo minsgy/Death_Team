@@ -7,8 +7,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    <link rel="stylesheet" href="{% block css %} {% endblock %}">
-    <title>{% block title %}{% endblock %}</title>
+    {% comment %} <link rel="stylesheet" href="{% block css %} {% endblock %}"> {% endcomment %}
+    <title>
+    {% block title %}
+
+    {% endblock %}
+    </title>
 </head>
 
 <body>
@@ -30,7 +34,9 @@
         <span class="nav-indicator"></span>
     </nav>
 
-    {% block content %} {% endblock %}
+    {% block content %} 
+    
+    {% endblock %}
 
     <footer>
         <div class="banner">
