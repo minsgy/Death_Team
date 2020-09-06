@@ -3,6 +3,6 @@ from django.conf import settings
 from . import views
 
 urlpatterns = [
-    path("/", views.order, name="order"),
+    path("order/", views.order, name="order"),
     path("payment/", views.payment, name="payment"),
 ]
