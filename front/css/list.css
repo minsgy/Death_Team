@@ -18,6 +18,7 @@ html, body {
 ::-webkit-scrollbar-thumb {background: #222;}
 ::-webkit-scrollbar-track {background: transparent}
 
+
 ::selection {
   background: #222;
   color: white;
@@ -26,10 +27,11 @@ html, body {
   background: #222;
   color: white;
   }
+  
 
 body * {
   transform-style: preserve-3d; /* am i doing this wrong? */
-  }
+}
 
 body {
   background: 
@@ -53,6 +55,7 @@ body {
 h1, p {
   margin: 5% 0;
   }
+
 
 .book {
   height: 80%;
@@ -171,77 +174,77 @@ h1, p {
   }
 
   
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+#form input::-webkit-input-placeholder, #form textarea::-webkit-input-placeholder {
   color: #aca49c;
   font-size: 0.875em;
 }
 
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+#form input:focus::-webkit-input-placeholder, #form textarea:focus::-webkit-input-placeholder {
   color: #bbb5af;
 }
 
-input::-moz-placeholder, textarea::-moz-placeholder {
+#form input::-moz-placeholder, #form textarea::-moz-placeholder {
   color: #aca49c;
   font-size: 0.875em;
 }
 
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+#form input:focus::-moz-placeholder, #form textarea:focus::-moz-placeholder {
   color: #bbb5af;
 }
 
-input::placeholder, textarea::placeholder {
+#form input::placeholder, #form textarea::placeholder {
   color: #aca49c;
   font-size: 0.875em;
 }
 
-input:focus::placeholder, textarea::focus:placeholder {
+#form input:focus::placeholder, #form textarea::focus:placeholder {
   color: #bbb5af;
 }
 
-input::-ms-placeholder, textarea::-ms-placeholder {
+#form input::-ms-placeholder, #form textarea::-ms-placeholder {
   color: #aca49c;
   font-size: 0.875em;
 }
 
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+#form input:focus::-ms-placeholder, #form textarea:focus::-ms-placeholder {
   color: #bbb5af;
 }
 
 /* on hover placeholder */
 
-input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+#form input:hover::-webkit-input-placeholder, #form textarea:hover::-webkit-input-placeholder {
   color: #e2dedb;
   font-size: 0.875em;
 }
 
-input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+#form input:hover:focus::-webkit-input-placeholder, #form textarea:hover:focus::-webkit-input-placeholder {
   color: #cbc6c1;
 }
 
-input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+#form input:hover::-moz-placeholder, #form textarea:hover::-moz-placeholder {
   color: #e2dedb;
   font-size: 0.875em;
 }
 
-input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+#form input:hover:focus::-moz-placeholder, #form textarea:hover:focus::-moz-placeholder {
   color: #cbc6c1;
 }
 
-input:hover::placeholder, textarea:hover::placeholder {
+#form input:hover::placeholder, #form textarea:hover::placeholder {
   color: #e2dedb;
   font-size: 0.875em;
 }
 
-input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+#form input:hover:focus::placeholder, #form textarea:hover:focus::placeholder {
   color: #cbc6c1;
 }
 
-input:hover::placeholder, textarea:hover::placeholder {
+#form input:hover::placeholder, #form textarea:hover::placeholder {
   color: #e2dedb;
   font-size: 0.875em;
 }
 
-input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+#form input:hover:focus::-ms-placeholder, #form textarea:hover::focus:-ms-placeholder {
   color: #cbc6c1;
 }
 
@@ -252,7 +255,7 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
   margin: 50px auto 100px auto;
 }
 
-input {
+#name, #email, #title, #message {
   font-size: 0.875em;
   width: 300px;
   height: 50px;
@@ -271,12 +274,12 @@ input {
   -ms-transition: all 0.3s ease-in-out;
 }
 
-input:hover {
+#form input:hover {
   background: #b3aca7;
   color: #e2dedb;
 }
 
-textarea {
+#form textarea {
   width: 300px;
   max-width: 300px;
   height: 300px;
@@ -298,7 +301,7 @@ textarea {
   -ms-transition: all 0.3s ease-in-out;
 }
 
-textarea:hover {
+#form textarea:hover {
   background: #b3aca7;
   color: #e2dedb;
 }
@@ -318,9 +321,205 @@ textarea:hover {
   cursor: pointer;
   
   border: solid 1px #3f342c;
-  border-top: none;
 }
 
 #submit:hover {
   color: black;
+}
+
+.btn10{
+  padding: 15px 100px;
+  margin:10px 4px;
+  color: black;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display:inline-block;
+  
+}
+.btn10{
+  top: 40px;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase!important;
+  letter-spacing: 2px;
+  color: #2e4e2c ;
+  cursor: hand;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid #2e4e2c ;
+  border-radius:50px;
+  position: fixed;
+  right: 10px;
+  top: 600px;
+
+  overflow: hidden!important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background: transparent!important;
+  z-index:10; 
+}
+
+.btn10:hover{
+  border: 1px solid #071982;
+  color: #F5F2A8!important;
+}
+.btn10::before {
+  content: '';
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #58AA55 ;
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg); 
+  transform: skewX(-20deg);   
+  left: -10%;
+  opacity: 1;
+  top: 0;
+  z-index: -12;
+  -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+-o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+-webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+   box-shadow:2px 0px 14px rgba(0,0,0,.6);
+} 
+
+.btn10::after {
+  content: '';
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #F5F2A8;
+  position: absolute;
+-ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg); 
+  transform: skewX(-20deg);   
+  left: -10%;
+  opacity: 0;
+  top: 0;
+  z-index: -15;
+  -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+  -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+}
+.btn10:hover::before, .btn1O:hover::before{
+opacity:1;
+width: 116%;
+}
+.btn10:hover::after, .btn1O:hover::after{
+opacity:1;
+width: 120%;
+}
+
+@import url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
+
+.form-group:first-child, .form-group:first-child {
+    width:80%;
+}
+.form-group:nth-child(2), .form-group:nth-child(2) {
+    width:18%;
+}
+.form-group * {
+    width:100%;
+}
+
+/* <- Demo Stuff Start */
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.btn {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+ }
+
+
+ .tip {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 10px solid rgb(170, 168, 145);
+}
+
+.tip-up {
+  top: -25px; /* Same as body margin top + border */
+  left: 10px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+
+
+.dialogbox .comment {
+  position: relative;
+  max-width: 300px;
+  height: auto;
+  margin: 20px 10px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 2px solid rgb(170, 168, 145);
+}
+
+.comment .message {
+  min-height: 30px;
+  border-radius: 3px;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.5;
+  color: black;
+}
+
+.message textarea {
+  border: none;
+  height: auto;
+
+  font-size: 0.875em;
+  width: 300px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: rgb(158, 155, 140) ;
+
+}
+
+.message input:focus{
+  outline:none;
+}
+
+.message input{
+  background: transparent;
+  position: relative;
+  left:250px;
 }
