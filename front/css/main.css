@@ -94,7 +94,10 @@ ul {
 	justify-content: center;
     align-items: center;
 	align-content: center;
-	margin-top: 70vh;
+	margin-top: 10vh;
 	text-align: center;
 }
 
+p{
+	margin-left:30px;
+}

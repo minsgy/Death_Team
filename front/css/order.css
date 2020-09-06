@@ -1,5 +1,6 @@
 @import "css/reset.css";
 
+/* cavas 관련 */
 body {
     background-color: #f6f9fc;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -76,38 +77,82 @@ body {
     margin-bottom: 30px;
 }
 
+
+
+/* 입력창 css */
 form {
     padding: 2em;
 }
 
-form .field {
-    margin: 3em auto;
-    opacity: .5;
-    text-align: center;
-    transition: all .2s ease-in-out;
-    width: 300px;
-}
-
-form .field.active {
-    opacity: 1;
-    transform: scale(1.5);
-}
-
-form .field.semi-active {
-    opacity: .75;
-    transform: scale(1.25);
-}
-
-form .field label {
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 30px;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #2c2c2c;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  .form__field::placeholder {
+    color: transparent;
+  }
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
     display: block;
-}
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+  }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+/* 입력창 css종료 */
 
+
+/* 컨버스랑 주문입력창 나란히 */
 .flex {
     display: flex;
 }
 
 
-
+/* 주문하기 버튼 css */
 .container {
     display: flex;
     justify-content: center;
@@ -117,6 +162,7 @@ form .field label {
     width: 20vw;
     margin: 0 auto;
     min-height: 50vh;
+    margin-left: 50px;
 }
 
 .btn {
@@ -149,9 +195,25 @@ form .field label {
     text-decoration: none;
 }
 
+/* 가격 css */
 .price{
-    margin-top: 110px;
+    margin-top: 90px;
     text-align: center;
     font-size: 40px;
     color: #58AA55;
 }
+
+
+
+/* 가격표시 */
+
+
+p {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 30px;
+  }
+  
+

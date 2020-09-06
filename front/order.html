@@ -39,29 +39,33 @@
           <div>
 
               <form>
-                  <div class="field">
-                      <label for="a">책이름</label>
-                      <input type="text" id="a">
+                <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                    <label for="name" class="form__label">이름</label>
                   </div>
-                  <div class="field">
-                      <label for="a">주문자</label>
-                      <input type="text" id="a">
+                  <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                    <label for="name" class="form__label">배송지</label>
                   </div>
-                  <div class="field">
-                      <label for="a">배송지</label>
-                      <input type="text" id="a">
+                  <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                    <label for="name" class="form__label">책제목</label>
                   </div>
-                  <div class="field">
-                      <label for="a">주문페이지</label>
-                      <input type="text" id="a">
+                  <div class="form__group field">
+                    <input type="number" class="form__field" placeholder="Name" id='book' value="" numberOnly/>
+                    <label for="name" class="form__label">주문건수</label>
                   </div>
-                  <div class="field">
-                    <label for="a">주문권수</label>
-                    <input type="text" id="a">
-                </div>
-                <div class="price">
-                    총 10000원
-                </div>
+                  <div class="form__group field">
+                    <input type="text" class="form__field" placeholder="Name" id='name' required />
+                    <label for="name" class="form__label">페이지범위</label>
+                  </div>
+                  
+                  <br>
+                  <br>
+                  <div >
+                  <!-- <div class="price" id="price"> -->
+                        <p class="price" id="prices">price</p>
+                  </div>
               </form>
               <div class="container">
                   <a href="#" class="btn btn-3">주문하기</a>
@@ -69,7 +73,11 @@
           </div>
 
       </div>
+
+      
       <script src="js/order.js"></script>
+
+      
   </body>
 
   </html>
