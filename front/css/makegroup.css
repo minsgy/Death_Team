@@ -58,7 +58,7 @@ input {
 
 /* 
 파일선택 디자인 */
-.fileUpload {
+/* .fileUpload {
     position: relative;
     overflow: hidden;
     margin: 10px;
@@ -73,4 +73,4 @@ input {
     cursor: pointer;
     opacity: 0;
     filter: alpha(opacity=0);
-}
+} */
