@@ -7,13 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    {% block css %}
-    {% endblock %}
-    {% comment %} k rel="stylesheet" href="{% block css %} {% endblock %}"> {% endcomment %}
+    <link rel="stylesheet" href="{% block css %} {% endblock %}">
+    <!-- 각 페이지 css -->
     <title>
-    {% block title %}
-
-    {% endblock %}
+        {% block title %} {% endblock %}
     </title>
 </head>
 
@@ -36,9 +33,7 @@
         <span class="nav-indicator"></span>
     </nav>
 
-    {% block content %} 
-    
-    {% endblock %}
+    {% block content %} {% endblock %}
 
     <footer>
         <div class="banner">
