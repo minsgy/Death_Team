@@ -32,11 +32,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 DOWNLOAD_APPS = [
-    "accounts.apps.AccountsConfig",  # 유저 계정 생성
+    "accounts.apps.AccountsConfig",  # 유저 계정 생성 및 로그인, 로그아웃 기능
     "groups.apps.GroupsConfig",  # 그룹 모델 생성
     "lists.apps.ListsConfig",  # 일기 모델 생성
     "orders.apps.OrdersConfig",  # 주문 모델
-    "main.apps.MainConfig",  # 메인 화면
     "essays.apps.EssaysConfig",  # 에시이 편집화면
     "core.apps.CoreConfig",  # Core 설정
     "comment.apps.CommentConfig", #댓글
