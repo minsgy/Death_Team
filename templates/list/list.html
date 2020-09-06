@@ -1,5 +1,6 @@
 {% extends "base.html" %} {% load static %} {% block css %}
-<link rel="stylesheet" href="{% static 'css/list.css' %}"> {% endblock %} {% block title %} 일기장 {% endblock %} {% block content %}
+{% static 'css/list.css' %} 
+{% endblock %} {% block title %} 일기장 {% endblock %} {% block content %}
 
 
 <div class='book'>
@@ -72,6 +73,8 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="js/list.js"></script>
 
+    {% endblock %}
+    {% block js %}
+    <script src="{% static 'js/list.js' %}"></script>
     {% endblock %}
