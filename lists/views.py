@@ -9,14 +9,14 @@ def create(request):
     """ create views 일기 작성 """
 
     if request.method == "POST":
-        item = List()
+        post = List()
 
-        item.name = request.POST["title"]  # 제목
-        # item.user = request.user  # 작성자
-        item.now = request.POST["date"]
-        item.content = request.POST["message"]  # 내용
-        item.photos = request.POST["photos"]  # 사진
-        item.save()
+        post.name = request.POST["title"]  # 제목
+        post.user = request.POST["user"]  # 작성자
+        post.now = request.POST["date"]
+        post.content = request.POST["message"]  # 내용
+
+        post.save()
 
         return redirect("detail")
 
