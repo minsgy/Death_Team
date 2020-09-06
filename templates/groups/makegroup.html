@@ -4,7 +4,7 @@
 {% block title %} group 생성 {% endblock %} 
 {% block content %}
     <!-- <img src="image/minilogo.png"> -->
-    <form method="POST" action=''>
+    <form method="POST" action="{% url 'group_create' %}">
       {% csrf_token %}
         <div>
           <h1>그룹을 생성해보세요.</h1>
@@ -14,7 +14,7 @@
               <span>사진 선택</span>
               <input name='image' type="file" class="upload" />
             </div>
-            <button type="submit" class="btn btn-success button2">그룹 생성</button>
+            <button type="submit" href="{% url 'group_create' %}"class="btn btn-success button2">그룹 생성</button>
         </div>
     </form>
 {% endblock %}
