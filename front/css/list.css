@@ -35,18 +35,6 @@ body * {
 }
 
 body {
-  /* background: 
-    radial-gradient(
-      hsla(199,40%,90%,.7), 
-      hsla(0,0%,100%,0)
-      ) 
-      no-repeat, 
-    linear-gradient(
-      60deg, 
-      #58AA55 , 
-      #AEE9B2, 
-      #F5F2A8
-      ); */
   color: #222;
   /*font-family: 'Gabriela', serif;*/
   perspective: 70em;/*in your face*/
@@ -130,11 +118,11 @@ h1, p {
   line-height: 50px;
   text-align: center;
   /*font-family: monospace;*/
-  content: '다음장';
+  content: '>>>';
   animation: hide .8s linear;
   }
   .page.flipped:after {
-    content: '이전장';
+    content: '<<<';
     transform:
       rotateY(180deg);
     pointer-events: auto;
@@ -174,160 +162,6 @@ h1, p {
     }
   }
 
-  
-#form input::-webkit-input-placeholder, #form textarea::-webkit-input-placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-
-#form input:focus::-webkit-input-placeholder, #form textarea:focus::-webkit-input-placeholder {
-  color: #bbb5af;
-}
-
-#form input::-moz-placeholder, #form textarea::-moz-placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-
-#form input:focus::-moz-placeholder, #form textarea:focus::-moz-placeholder {
-  color: #bbb5af;
-}
-
-#form input::placeholder, #form textarea::placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-
-#form input:focus::placeholder, #form textarea::focus:placeholder {
-  color: #bbb5af;
-}
-
-#form input::-ms-placeholder, #form textarea::-ms-placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-
-#form input:focus::-ms-placeholder, #form textarea:focus::-ms-placeholder {
-  color: #bbb5af;
-}
-
-/* on hover placeholder */
-
-#form input:hover::-webkit-input-placeholder, #form textarea:hover::-webkit-input-placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-
-#form input:hover:focus::-webkit-input-placeholder, #form textarea:hover:focus::-webkit-input-placeholder {
-  color: #cbc6c1;
-}
-
-#form input:hover::-moz-placeholder, #form textarea:hover::-moz-placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-
-#form input:hover:focus::-moz-placeholder, #form textarea:hover:focus::-moz-placeholder {
-  color: #cbc6c1;
-}
-
-#form input:hover::placeholder, #form textarea:hover::placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-
-#form input:hover:focus::placeholder, #form textarea:hover:focus::placeholder {
-  color: #cbc6c1;
-}
-
-#form input:hover::placeholder, #form textarea:hover::placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-
-#form input:hover:focus::-ms-placeholder, #form textarea:hover::focus:-ms-placeholder {
-  color: #cbc6c1;
-}
-
-
-#form {
-  position: relative;
-  width: 300px;
-  margin: 50px auto 100px auto;
-}
-
-#name, #email, #title, #message {
-  font-size: 0.875em;
-  width: 300px;
-  height: 50px;
-  padding: 0px 15px 0px 15px;
-  
-  background: transparent;
-  outline: none;
-  color: black ;
-  
-  border: solid 1px #3f342c;
-  border-bottom: none;
-  
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-}
-
-#form input:hover {
-  background: #b3aca7;
-  color: #e2dedb;
-}
-
-#form textarea {
-  width: 300px;
-  max-width: 300px;
-  height: 300px;
-  max-height: 300px;
-  padding: 15px;
-  
-  background: transparent;
-  outline: none;
-  
-  color: #726659;
-  font-family: 'Lato', sans-serif;
-  font-size: 0.875em;
-  
-  border: solid 1px #3f342c;
-  
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-}
-
-#form textarea:hover {
-  background: #b3aca7;
-  color: #e2dedb;
-}
-
-#submit {
-  background-color: #AEE9B2;
-  width: 300px;
-  
-  padding: 0;
-  margin: -5px 0px 0px 0px;
-  
-  font-family: 'Lato', sans-serif;
-  font-size: 0.875em;
-  color: black ;
-  
-  outline:none;
-  cursor: pointer;
-  
-  border: solid 1px #3f342c;
-}
-
-#submit:hover {
-  color: black;
-}
-
 .btn10{
   padding: 15px 50px;
   /* margin:10px 4px; */
@@ -335,7 +169,7 @@ h1, p {
   font-family: sans-serif;
   text-transform: uppercase;
   text-align: center;
-  position: relative;
+  position: fixed;
   text-decoration: none;
   display:inline-block;
   
@@ -375,7 +209,7 @@ h1, p {
   width: 0%;
   height: 100%;
   display: block;
-  background: #58AA55 ;
+  background: #c2ae6c ;
   position: absolute;
   -ms-transform: skewX(-20deg);
   -webkit-transform: skewX(-20deg); 
@@ -522,4 +356,12 @@ width: 120%;
 
 #center{
   text-align: center;
+}
+
+
+.btn_go{
+  background: transparent;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
 }
