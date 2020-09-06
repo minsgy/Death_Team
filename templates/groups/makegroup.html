@@ -12,9 +12,9 @@
           <input name='name' type="text" class="form-control boxcontrol" placeholder="그룹 이름을 입력해주세요." aria-label="Recipient's username" aria-describedby="button-addon2">
             <div class="fileUpload btn btn-outline-success">
               <span>사진 선택</span>
-              <input name='image' type="file" class="upload" />
+              <input name='image' type="file" class="upload" required/>
             </div>
-            <button type="submit" href="{% url 'group_create' %}"class="btn btn-success button2">그룹 생성</button>
+            <button type="submit" class="btn btn-success button2">그룹 생성</button>
         </div>
     </form>
 {% endblock %}

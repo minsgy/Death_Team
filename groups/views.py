@@ -8,10 +8,10 @@ def group_home(request):
     return render(request, "groups/main.html",{'groups':groups})
 
 def group_create(request):
-    group = Group()
     if request.method == 'POST':
-        group.image = request.FILES.get('image') # new.html의 name="image"
-        group.name = request.POST.get('name') # new.html의 name="name"
+        group = Group()
+        group.image = request.FILES['image'] # new.html의 name="image"
+        group.name = request.POST['name'] # new.html의 name="name"
         group.save()
         print("생성완료")
         return redirect('group_main')
