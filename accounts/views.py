@@ -12,7 +12,7 @@ def login(request):
 
         if user is not None:
             auth.login(request, user)
-            return redirect("main") # 그룹 선택 화면 이동
+            return redirect("group_main") # 그룹 선택 화면 이동
         else:
             print("로그인안댐")
             return render(request, "account/join.html", {"error": "아이디 또는 비밀 번호가 다릅니다."})
@@ -34,7 +34,7 @@ def signup(request):
             )
             # 유저 값을 가져와 아이디/패스워드에 추가한 값을 user에 추가
             auth.login(request, user)
-            return redirect("")  # 다시 로그인 화면
+            return redirect('login')  # 다시 로그인 화면
         print("생성 안됌") 
         return render(request, "")  # 비밀번호 확인 실패 시 다시 돌아감.
     

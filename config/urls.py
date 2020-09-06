@@ -22,7 +22,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("",include("accounts.urls")), # 로그인 화면
     # path("/",include("essays.urls")),
-    # path("/",include("groups.urls")),
+    path("groups/",include("groups.urls")), # 그룹 모임 메인 화면
     path("list/", include("lists.urls")),
     # path("/",include("main.urls")),
     # path("/",include("orders.urls")),
