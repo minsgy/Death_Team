@@ -65,6 +65,7 @@ p {
 }
 
 .book {
+
   height: 80%;
   max-height: 500px;
   min-height: 300px;
@@ -75,7 +76,8 @@ p {
       hsla(30, 40%, 20%, .9),
       hsla(30, 40%, 50%, .4) 90%),
     url('http://inspirationhut3.inspirationhut.netdna-cdn.com/wp-content/uploads/2012/11/Old-Paper-Texture-3.jpg');
-  position: absolute;
+  position: relative;
+  float: center;
   top: 0;
   left: 0;
   bottom: 0;
