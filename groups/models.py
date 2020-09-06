@@ -7,7 +7,10 @@ class Group(core_models.TimeStempedModel):
 
     """ Groups Model """
 
-    name = models.CharField(max_length=150)
-    uni_code = models.IntegerField(random.randint(1, 10000000))
-    members = models.ManyToManyField("accounts.User", related_name="group", blank=True)
+    name = models.CharField(max_length=150) # 그룹 이름
+    uni_code = models.IntegerField() # 그룹 고유 값 입력받기 
+    image = models.ImageField(upload_to='images/') # 책 표지 정하기
+    members = models.ManyToManyField("accounts.User", related_name="group", blank=True) # User 객체
 
+    def __str__(self):
+        return self.name

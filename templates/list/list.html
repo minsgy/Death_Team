@@ -34,24 +34,26 @@
         <!-- .side-2 -->
     </div>
     <!-- 일기 보여주기 -->
-
     {% for a in page %}
     <div id='page-2' class='page no-anim'>
         <div class='side-1' id='p3'>
             <div class='content'>
                 <div class="date_memo">작성날짜 : {{a.now}}</div>
-                <div class="writer_memo">작성자 : </div>
-                <h1 class="title_memo">제목 : {{a.content}} </h1>
+                <div class="writer_memo">{{a.name}}</div>
+                <h1 class="title_memo">제목 : {{a.title}} </h1>
                 <div class="content_memo">
+                    {{a.content}}
                     -------------------------------------------------------------------------------------------------------------------------
                 </div>
             </div>
             {% endfor %}
-            <a href="{url 'create'}">
+            <div >
+            <a href="{% url 'create' %}">
                 일기 작성하기
             </a>
+            </div>
             <!--일기 작성하기-->
-            <div id='page-5' class='page no-anim'>
+            {% comment %} <div id='page-5' class='page no-anim'>
                 <div class='side-1' id='p8'>
                     <form id="form" class="topBefore">
 
@@ -67,14 +69,14 @@
                 <div class='side-2' id='p9'>
                 </div>
                 <!-- .side-2 -->
-            </div>
+            </div> {% endcomment %}
             <!-- #page-5 -->
 
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
     {% endblock %}
     {% block js %}
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="{% static 'js/list.js' %}"></script>
     {% endblock %}

@@ -11,6 +11,8 @@
 
 body{
   font-family: 'Cafe24Oneprettynight';
+  background-color: white; 
+  /* 배경색 흰색으로 */
 }
 
 #navbar{

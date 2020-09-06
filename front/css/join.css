@@ -1,9 +1,20 @@
 /* ------------------------------------ Click on login and Sign Up to  changue and view the effect
 ---------------------------------------
 */
+/* 
+개빡치네 글씨체 적용이 안됨  */
+/* @font-face {
+  font-family: 'Cafe24Oneprettynight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff%27') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2{
+  font-family: 'Cafe24Oneprettynight';
+} */
 
 body{
-    background-image: url('../image/image.jpg'); 
     background-size: 100% ;
 }
 
