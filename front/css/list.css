@@ -7,6 +7,7 @@
 
 html, body {
   height: 100%;
+  
   }
 
 .date_memo{
@@ -328,8 +329,8 @@ h1, p {
 }
 
 .btn10{
-  padding: 15px 100px;
-  margin:10px 4px;
+  padding: 15px 50px;
+  /* margin:10px 4px; */
   color: black;
   font-family: sans-serif;
   text-transform: uppercase;
@@ -340,7 +341,7 @@ h1, p {
   
 }
 .btn10{
-  top: 40px;
+  top: 10px;
   font-family: "proxima-nova", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -354,7 +355,7 @@ h1, p {
   border-radius:50px;
   position: fixed;
   right: 10px;
-  top: 600px;
+  /* top: 600px; */
 
   overflow: hidden!important;
   -webkit-transition: all .3s ease-in-out;
@@ -432,11 +433,6 @@ width: 120%;
 }
 
 /* <- Demo Stuff Start */
-
-body{
-  font-family: 'Montserrat', sans-serif;
-  margin:0;
-}
 
 .container {
   display: flex;
@@ -522,4 +518,8 @@ body{
   background: transparent;
   position: relative;
   left:250px;
+}
+
+#center{
+  text-align: center;
 }
