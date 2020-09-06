@@ -1,14 +1,13 @@
 from django.shortcuts import render, redirect
 from django.utils import timezone
-from . import models
+from .models import List
 
 
 def detail(request):
 
     """ list views 일기장 """
 
-    page = models.List()
-
+    page = List.objects.all() # 모든 리스트 객체 가져오기
     page.now = timezone.now()
     page.content = "불라불라"
     return render(request, "list/list.html", {"page": page})
