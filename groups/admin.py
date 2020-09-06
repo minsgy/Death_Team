@@ -1,10 +1,18 @@
 from django.contrib import admin
-from . import models
-
+from .models import Group
 # Register your models here.
-@admin.register(models.Group)
-class RoomAdmin(admin.ModelAdmin):
-
-    """ Group Admin Definition """
-
-    pass
+@admin.register(Group)
+class GroupAdmin(admin.ModelAdmin):
+    fieldsets = (
+        (
+            "Basic Info",
+            {"fields":("name", "uni_code","image","members",)},
+        ),
+    )
+    list_display = (
+        "name",
+        "uni_code",
+    )
+    filter_horizontal = (
+        "members", # manytomany Field 지정
+    )
