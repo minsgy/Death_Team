@@ -4,14 +4,14 @@
 + 해당 프로젝트는 SCH LikeLion 8th - 피닉스톤 팀 **죽음의조** 에서 진행한 프로젝트입니다.  
 + BackEnd - 박형민, 최민석
 + FrontEnd - 박병호, 강민서, 임수빈, 하유민
-+![슬라이드1](https://user-images.githubusercontent.com/60251579/92381667-3bb5db00-f146-11ea-9701-eafff9eeb8ca.PNG)
-+![슬라이드2](https://user-images.githubusercontent.com/60251579/92381670-3c4e7180-f146-11ea-919f-066fd9f5f74f.PNG)
-+![슬라이드3](https://user-images.githubusercontent.com/60251579/92381672-3ce70800-f146-11ea-9593-44d431c0c3bf.PNG)
-+![슬라이드4](https://user-images.githubusercontent.com/60251579/92381673-3ce70800-f146-11ea-91f4-0aa6bda6cd4b.PNG)
-+![슬라이드5](https://user-images.githubusercontent.com/60251579/92381674-3d7f9e80-f146-11ea-9933-5264abaa4679.PNG)
-+![슬라이드6](https://user-images.githubusercontent.com/60251579/92381676-3d7f9e80-f146-11ea-8220-9054bf4a277f.PNG)
-+![슬라이드7](https://user-images.githubusercontent.com/60251579/92381677-3e183500-f146-11ea-88f8-06e20a1ed772.PNG)
-+![슬라이드8](https://user-images.githubusercontent.com/60251579/92381659-3a84ae00-f146-11ea-94e0-bf251c83d1af.PNG)
++ ![슬라이드1](https://user-images.githubusercontent.com/60251579/92381667-3bb5db00-f146-11ea-9701-eafff9eeb8ca.PNG)
++ ![슬라이드2](https://user-images.githubusercontent.com/60251579/92381670-3c4e7180-f146-11ea-919f-066fd9f5f74f.PNG)
++ ![슬라이드3](https://user-images.githubusercontent.com/60251579/92381672-3ce70800-f146-11ea-9593-44d431c0c3bf.PNG)
++ ![슬라이드4](https://user-images.githubusercontent.com/60251579/92381673-3ce70800-f146-11ea-91f4-0aa6bda6cd4b.PNG)
++ ![슬라이드5](https://user-images.githubusercontent.com/60251579/92381674-3d7f9e80-f146-11ea-9933-5264abaa4679.PNG)
++ ![슬라이드6](https://user-images.githubusercontent.com/60251579/92381676-3d7f9e80-f146-11ea-8220-9054bf4a277f.PNG)
++ ![슬라이드7](https://user-images.githubusercontent.com/60251579/92381677-3e183500-f146-11ea-88f8-06e20a1ed772.PNG)
++ ![슬라이드8](https://user-images.githubusercontent.com/60251579/92381659-3a84ae00-f146-11ea-94e0-bf251c83d1af.PNG)
 
 
 
