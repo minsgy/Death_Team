@@ -40,4 +40,10 @@ django-admin startproject projectname .
 
 
 ## 📚 APP 
-+ **추후 기재**
++ 💾 core : Abstract Model로 각 모델이 생성 된 시기, 업데이트 시기를 저장하는 기능
++ 💾 accounts : User, Login, Logout 구현, 회원가입, 로그인 Page 구현
++ 💾 comment : lists(일기장)의 코멘트 기능
++ 💾 essays : lists(일기장)을 합쳐서 essay로 바꾸는 기능
++ 💾 groups : 하나의 가족(그룹)을 정의한 기능, 가족 생성 및 참가 기능
++ 💾 lists : 가족(groups)에 입장하여 일기장을 저장 할 그룹, 일기장 생성 및 삭제 기능
++ 💾 orders : 생성 한 essays(에쎄이)를 주문 하는 기능, 결제 기능, 표지 선택 및 그리기 기능
